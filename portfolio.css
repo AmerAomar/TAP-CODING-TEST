@@ -1,12 +1,11 @@
-/* Add this block of CSS for the hover animation */
+
 nav a:hover {
     color: #4fc0d1;
-    /* Change color on hover */
     transition: color 0.3s ease;
-    /* Add a smooth transition effect */
+    
 }
 
-/* Rest of your existing CSS remains unchanged */
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -40,9 +39,7 @@ nav ul {
     align-items: center;
     height: 50px;
     border: 2px solid #4fc0d1;
-    /* Add border style and color */
     border-radius: 10px;
-    /* Optional: Add border-radius for rounded corners */
 }
 
 nav a {
@@ -59,7 +56,6 @@ nav a:before {
     bottom: 0;
     left: 0;
     background-color: #4fc0d1;
-    /* Animation color */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -70,19 +66,15 @@ nav a:hover:before {
     transform: scaleX(1);
 }
 
-/* Style for Home */
 nav li:nth-child(1) a {
     color: #ea9c0c;
-    /* Orange color */
 }
 
-/* Style for About Me and Contact Me */
+
 nav li:nth-child(2) a,
 nav li:nth-child(3) a {
     color: #000;
-    /* Black color */
     font-weight: bold;
-    /* Bold */
 }
 
 section {
@@ -96,7 +88,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Additional styles for the image and about-container */
+
 .about-container {
     display: flex;
     justify-content: space-around;
@@ -105,7 +97,7 @@ footer {
 
 
 section#about .about-image {
-    margin-right: 20px; /* Adjust the margin as per your preference */
+    margin-right: 20px; 
 }
 
 section#about .about-image img {
@@ -116,8 +108,8 @@ section#about .about-image img {
 }
 
 section#about .about-image:hover img {
-    transform: scale(1.1); /* Increase the size on hover */
-    box-shadow: 0 0 40px 0 rgba(79, 192, 209, 0.7); /* Add a circular glowing border effect */
+    transform: scale(1.1); 
+    box-shadow: 0 0 40px 0 rgba(79, 192, 209, 0.7); 
 }
 
 h2 {
@@ -126,10 +118,6 @@ h2 {
 
 
 
-
-
-
-/* skills part */
 
 #skills {
     text-align: center;
@@ -145,21 +133,21 @@ h2 {
     margin: 10px;
     padding: 8px 15px;
     border-radius: 5px;
-    background-color: #ea9c0c; /* Match the color of "Home" in the header */
-    color: #fff; /* Text color */
+    background-color: #ea9c0c; 
+    color: #fff; 
     cursor: pointer;
     position: relative;
-    z-index: 1; /* Add z-index to the skill element */
+    z-index: 1; 
 }
 
 #skills li:hover {
-    background-color: #4fc0d1; /* Change color on hover */
-    z-index: 2; /* Increase z-index on hover to bring it to the front */
+    background-color: #4fc0d1; 
+    z-index: 2; 
 }
 
-/* Add a tooltip for each skill */
+
 #skills li:hover::after {
-    content: attr(data-tooltip); /* Display the data-tooltip content */
+    content: attr(data-tooltip); 
     position: absolute;
     top: 100%;
     left: 50%;
@@ -171,7 +159,7 @@ h2 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 3; /* Set a higher z-index for the tooltip */
+    z-index: 3; 
 }
 
 #skills li:hover::after {
