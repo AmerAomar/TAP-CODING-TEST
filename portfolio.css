@@ -103,7 +103,7 @@ section#about .about-image {
 section#about .about-image img {
     max-width: 90%;
     height: auto;
-    border-radius: 13px;
+    border-radius: 44px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
